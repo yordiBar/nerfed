@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/gallery', function () {
-    return view('gallery');
-});
+Route::get('/',[PagesController::class,'index']);
 
-Route::get('/videos', function () {
-    return view('videos');
-});
+Route::get('/gallery',[PagesController::class,'gallery']);
+
+Route::get('/videos',[PagesController::class,'videos']);

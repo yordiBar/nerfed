@@ -17,9 +17,9 @@
             <h1 class="logo">Nerfed</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -106,9 +106,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                 </ul>
             </nav>
             <div class="social">

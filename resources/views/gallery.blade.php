@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
-    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="/css/globals.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">    
+    <link href="/css/style.css" rel="stylesheet">
     <title>Fancy Website</title>
 </head>
+
 <body>
     <!-- Navbar-->
     <div class="navbar">
@@ -17,9 +17,9 @@
             <h1 class="logo">Nerfed</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,14 +31,14 @@
             <div>
                 <h1 class="xl">Gallery</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quam animi sapiente nam alias ullam fugit inventore 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam animi sapiente nam alias ullam fugit inventore
                     provident repudiandae cumque beatae.
                 </p>
             </div>
             <img src="images/docs.png" alt="">
         </div>
-    </section>    
+    </section>
 
     <!-- Gallery Main -->
     <section class="gallery-main my-4">
@@ -64,20 +64,20 @@
             <div class="card">
                 <h2>Introduction</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quam animi sapiente nam alias ullam fugit inventore 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam animi sapiente nam alias ullam fugit inventore
                     provident repudiandae cumque beatae.
                 </p>
 
                 <div class="alert alert-success">
-                    <i class="fas fa-info"></i> Lorem, ipsum 
-                    dolor sit amet consectetur adipisicing elit. 
+                    <i class="fas fa-info"></i> Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit.
                     Accusantium, iste!
                 </div>
 
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quam dicta similique ratione dolore assumenda provident.
                 </p>
                 <a href="" class="btn btn-primary">Do something here...</a>
@@ -108,9 +108,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                 </ul>
             </nav>
             <div class="social">
@@ -122,4 +122,5 @@
         </div>
     </footer>
 </body>
+
 </html>
