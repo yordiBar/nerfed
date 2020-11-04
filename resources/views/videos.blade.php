@@ -8,7 +8,7 @@
     crossorigin="anonymous" />
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/style.css">    
-    <title>Fancy Website</title>
+    <title>Nerfed</title>
 </head>
 <body>
     <!-- Navbar-->

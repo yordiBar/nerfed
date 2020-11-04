@@ -10,7 +10,7 @@
     <link href="/css/globals.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     
-    <title>Fancy Website</title>
+    <title>Nerfed</title>
 </head>
 <body>
     <!-- Navbar-->
