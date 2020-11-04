@@ -20,3 +20,7 @@ Route::get('/',[PagesController::class,'index']);
 Route::get('/gallery',[PagesController::class,'gallery']);
 
 Route::get('/videos',[PagesController::class,'videos']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
