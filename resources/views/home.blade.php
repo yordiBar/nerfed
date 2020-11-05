@@ -20,8 +20,19 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
+                    @if (Route::has('login'))
+                        @auth
+                            <li><a href="/videos">Videos</a></li>
+                            <li><a href="/gallery">Gallery</a></li>
+                            <li><a href="/user/profile">{{ Auth::user()->name }}</a></li>
+                            <li><a href="/logout">Logout</a></li>                            
+                        @else
+                            <li><a href="/login">Login</a></li>
+                            @if (Route::has('register'))
+                                <li><a href="/register">Register</a></li>
+                            @endif
+                        @endif
+                    @endif
                 </ul>
             </nav>
         </div>
