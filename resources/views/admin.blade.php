@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
 
     <link href="/css/globals.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-
+    
     <title>Nerfed</title>
 </head>
-
 <body>
     <!-- Navbar-->
     <div class="navbar">
@@ -20,8 +20,19 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
+                    @if (Route::has('login'))
+                        @auth
+                            <li><a href="/videos">Videos</a></li>
+                            <li><a href="/gallery">Gallery</a></li>
+                            <li><a href="/user/profile">{{ Auth::user()->name }}</a></li>
+                            <li><a href="/logout">Logout</a></li>                            
+                        @else
+                            <li><a href="/login">Login</a></li>
+                            @if (Route::has('register'))
+                                <li><a href="/register">Register</a></li>
+                            @endif
+                        @endif
+                    @endif
                 </ul>
             </nav>
         </div>
@@ -31,10 +42,10 @@
         <div class="container grid">
             <div class="showcase-text">
                 <h1>My Video Editing Blog</h1>
-                <p>This is a collection of the work I have done on my
+                <p>This is a collection of the work I have done on my 
                     clips playing Fortnite.
                 </p>
-                <a href="videos.html" class="btn btn-outline">Watch more videos</a>
+                    <a href="videos.html" class="btn btn-outline">Watch more videos</a>
             </div>
             <div class="showcase-form card">
                 <h2>Send us a message</h2>
@@ -47,9 +58,9 @@
                     </div>
                     <div class="form-control">
                         <textarea placeholder="Your message here..." required></textarea>
-                    </div>
+                    </div>                    
                     <input type="submit" value="Send" class="btn btn-dark">
-                </form>
+                </form>                
             </div>
         </div>
     </section>
@@ -58,8 +69,8 @@
     <section class="features">
         <div class="container">
             <h3 class="features-heading text-center my-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vivamus venenatis velit vitae massa tempor, et ultricies elit luctus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus venenatis velit vitae massa tempor, et ultricies elit luctus. 
                 Ut gravida eu nulla a dignissim. Sed sagittis a mi ac volutpat.
             </h3>
 
@@ -87,17 +98,17 @@
     <section class="image">
         <div class="container grid">
             <img src="images/coder-image_800x800.png" alt="">
-            <div class="card">
-                <h3>Something here</h3>
-            </div>
-            <div class="card">
-                <h3>More stuff here</h3>
-            </div>
+        <div class="card">
+            <h3>Something here</h3>
+        </div>
+        <div class="card">
+            <h3>More stuff here</h3>
+        </div>
         </div>
     </section>
 
     <!-- Graphic Section -->
-    <section class="graph bg-primary my-2 py-2">
+    <section  class="graph bg-primary my-2 py-2">
         <div class="container grid">
             <div class="text-center">
                 <h2 class="lg">Some Graphics here</h2>
@@ -129,7 +140,7 @@
             <div class="card">
                 <h4>Python</h4>
                 <img src="images/logos/python.png" alt="">
-            </div>
+            </div>            
         </div>
     </section>
 
@@ -156,5 +167,4 @@
         </div>
     </footer>
 </body>
-
 </html>

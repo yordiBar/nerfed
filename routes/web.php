@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,8 @@ Route::get('/',[PagesController::class,'index']);
 Route::get('/gallery',[PagesController::class,'gallery']);
 
 Route::get('/videos',[PagesController::class,'videos']);
+
+Route::get('/admin',[AdminController::class,'admin']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
