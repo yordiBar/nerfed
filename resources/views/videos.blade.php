@@ -14,7 +14,7 @@
     <!-- Navbar-->
     <div class="navbar">
         <div class="container flex">
-            <h1 class="logo">Nerfed</h1>
+            <h1 class="logo"><a href="/">Nerfed</a></h1>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -31,9 +31,8 @@
             <div>
                 <h1 class="xl">Videos</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam animi sapiente nam alias ullam fugit inventore
-                    provident repudiandae cumque beatae.
+                    This is a collection of my YouTube videos.
+                    Videos and montages made using several different programmes and techniques.
                 </p>
             </div>
             <img src="images/server.png" alt="">
@@ -42,26 +41,26 @@
 
     <!-- Videos-main -->
     <section class="videos-main my-2">
-        <div class="container grid grid-3">
+        <div class="container vid vid-3">
             <div class="card flex">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8hASdMQFPBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/8hASdMQFPBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-                <iframe width="350" height="215" src="https://www.youtube.com/embed/bcTzt42y0nM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/bcTzt42y0nM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-            <iframe width="350" height="215" src="https://www.youtube.com/embed/Yip7CmKHOEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/Yip7CmKHOEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="container grid grid-3">
+        <div class="container vid vid-3">
             <div class="card flex">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vd_N6gYHpUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/vd_N6gYHpUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-            <iframe width="350" height="215" src="https://www.youtube.com/embed/xL7l_REw9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/xL7l_REw9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-            <iframe width="350" height="215" src="https://www.youtube.com/embed/L4Etc-ZGQEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/L4Etc-ZGQEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -70,11 +69,12 @@
     <section class="videos-sub-head bg-light py-3">
         <div class="container grid">
             <div>
-                <h1 class="md">Another Section Title</h1>
+                <h1 class="md">Video Editor</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam animi sapiente nam alias ullam fugit inventore
-                    provident repudiandae cumque beatae.
+                    Training and practicing in the field of video and sound editing.
+                    Checkout my YouTube channel!
+                    <a href="https://www.youtube.com/channel/UC4EIFBatBM5pdB1tiRm1QPA/featured" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
                 </p>
             </div>
             <img src="images/server2.png" alt="">
@@ -97,10 +97,11 @@
                 </ul>
             </nav>
             <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UC4EIFBatBM5pdB1tiRm1QPA/featured" target="_blank">
+                    <i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
         </div>
     </footer>

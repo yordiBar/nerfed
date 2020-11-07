@@ -151,6 +151,20 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.vid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.vid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* Margins */
 .my-1 {
     margin: 1rem 0;

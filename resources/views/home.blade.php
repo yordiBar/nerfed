@@ -16,7 +16,7 @@
     <!-- Navbar-->
     <div class="navbar">
         <div class="container flex">
-            <h1 class="logo">Nerfed</h1>
+            <h1 class="logo"><a href="/">Nerfed</a></h1>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
