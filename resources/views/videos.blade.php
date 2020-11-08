@@ -41,6 +41,9 @@
 
     <!-- Videos-main -->
     <section class="videos-main my-2">
+        <div class="container">
+            <h4>Latest videos...</h4>
+        </div>
         <div class="container vid vid-3">
             <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/8hASdMQFPBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -63,6 +66,13 @@
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/L4Etc-ZGQEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+        <div class="container yt">
+            <h4>For more videos please checkout my
+                <a href="https://www.youtube.com/channel/UC4EIFBatBM5pdB1tiRm1QPA/featured" target="_blank">
+                    YouTube</a> channel... >>> <a href="https://www.youtube.com/channel/UC4EIFBatBM5pdB1tiRm1QPA/featured" target="_blank">
+                    <i class="fab fa-youtube fa-2x"></i></a></h4>
+        </div>
+
     </section>
 
     <!-- Sub Head -->
@@ -87,7 +97,7 @@
         <div class="container grid grid-3">
             <div>
                 <h1>Nerfed</h1>
-                <p>Copyright &copy; 2020</p>
+                <p>Created by <a href="https://github.com/yordiBar" target="_blank">yordiBAR</a> &copy; 2020</p>
             </div>
             <nav>
                 <ul>

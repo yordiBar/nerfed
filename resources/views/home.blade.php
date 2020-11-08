@@ -34,7 +34,7 @@
                 <p>This is a collection of the work I have done on my
                     clips playing Fortnite.
                 </p>
-                <a href="videos.html" class="btn btn-outline">Watch more videos</a>
+                <a href="/videos" class="btn btn-outline">Watch more videos</a>
             </div>
             <div class="showcase-form card">
                 <h2>Send us a message</h2>
