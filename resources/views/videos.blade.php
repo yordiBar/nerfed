@@ -12,18 +12,7 @@
 
 <body>
     <!-- Navbar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo"><a href="/">Nerfed</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <x-navbar />
 
     <!-- Head -->
     <section class="videos-head bg-primary py-3">
@@ -46,24 +35,24 @@
         </div>
         <div class="container vid vid-3">
             <div class="card flex">
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/-_oRjksom3o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/8hASdMQFPBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/bcTzt42y0nM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="container vid vid-3">
             <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/Yip7CmKHOEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
-        <div class="container vid vid-3">
             <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/vd_N6gYHpUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
                 <iframe width="250" height="180" src="https://www.youtube.com/embed/xL7l_REw9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/L4Etc-ZGQEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="container yt">
@@ -93,28 +82,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Nerfed</h1>
-                <p>Created by <a href="https://github.com/yordiBar" target="_blank">yordiBAR</a> &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://www.youtube.com/channel/UC4EIFBatBM5pdB1tiRm1QPA/featured" target="_blank">
-                    <i class="fab fa-youtube fa-2x"></i></a>
-                <a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
+    <x-footer />
 </body>
 
 </html>

@@ -14,18 +14,8 @@
 
 <body>
     <!-- Navbar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo"><a href="/">Nerfed</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <x-navbar />
+
     <!--Showcase Area-->
     <section class="showcase">
         <div class="container grid">
@@ -37,7 +27,8 @@
                 <a href="/videos" class="btn btn-outline">Watch more videos</a>
             </div>
             <div class="showcase-form card">
-                <h2>Send us a message</h2>
+                <h3>Insert an image??</h3>
+                <!-- <h2>Send us a message</h2>
                 <form>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
@@ -49,7 +40,7 @@
                         <textarea placeholder="Your message here..." required></textarea>
                     </div>
                     <input type="submit" value="Send" class="btn btn-dark">
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
@@ -106,55 +97,10 @@
             </div>
             <img src="images/cloud.png" alt="">
         </div>
-    </section>
-
-    <!-- Languages Section -->
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Supported Languages
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>Node.js</h4>
-                <img src="images/logos/node.png" alt="">
-            </div>
-            <div class="card">
-                <h4>C#</h4>
-                <img src="images/logos/csharp.png" alt="">
-            </div>
-            <div class="card">
-                <h4>PHP</h4>
-                <img src="images/logos/php.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Python</h4>
-                <img src="images/logos/python.png" alt="">
-            </div>
-        </div>
-    </section>
+    </section>    
 
     <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Nerfed</h1>
-                <p>Copyright &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
+    <x-footer />
 </body>
 
 </html>

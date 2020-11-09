@@ -22,7 +22,9 @@ Route::get('/gallery',[PagesController::class,'gallery']);
 
 Route::get('/videos',[PagesController::class,'videos']);
 
-Route::get('/admin',[AdminController::class,'admin']);
+Route::get('/contact',[PagesController::class,'contact']);
+
+Route::get('/admin',[PagesController::class,'admin']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
