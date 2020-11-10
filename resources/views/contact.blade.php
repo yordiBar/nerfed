@@ -48,22 +48,22 @@
             Supported Languages
         </h2>
         <div class="container flex">
-            <div class="card">
+            <!-- <div class="card">
                 <h4>Node.js</h4>
                 <img src="images/logos/node.png" alt="">
             </div>
             <div class="card">
                 <h4>C#</h4>
                 <img src="images/logos/csharp.png" alt="">
-            </div>
+            </div> -->
             <div class="card">
                 <h4>PHP</h4>
                 <img src="images/logos/php.png" alt="">
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <h4>Python</h4>
                 <img src="images/logos/python.png" alt="">
-            </div>
+            </div> -->
         </div>
     </section>
 

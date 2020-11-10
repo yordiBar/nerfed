@@ -27,7 +27,7 @@
                 <a href="/videos" class="btn btn-outline">Watch more videos</a>
             </div>
             <div class="showcase-form card">
-                <h3>Insert an image??</h3>
+                <img src="images/desk.jfif" alt="desk">
                 <!-- <h2>Send us a message</h2>
                 <form>
                     <div class="form-control">
@@ -49,25 +49,23 @@
     <section class="features">
         <div class="container">
             <h3 class="features-heading text-center my-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vivamus venenatis velit vitae massa tempor, et ultricies elit luctus.
-                Ut gravida eu nulla a dignissim. Sed sagittis a mi ac volutpat.
+                Some text that makes sense.
             </h3>
 
             <div class="grid grid-3 text-center my-4">
                 <div>
                     <i class="fas fa-server fa-3x"></i>
-                    <h3>Something here</h3>
+                    <h3><a href="/">Home</a></h3>
                     <!-- <p class="text-secondary">Title 1</p> -->
                 </div>
                 <div>
                     <i class="fas fa-camera fa-3x"></i>
-                    <h3>Gallery</h3>
+                    <h3><a href="/gallery">Gallery</a></h3>
                     <!-- <p class="text-secondary">Gallery</p> -->
                 </div>
                 <div>
                     <i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>Something here</h3>
+                    <h3><a href="/videos">Videos</a></h3>
                     <!-- <p class="text-secondary">Title 3</p> -->
                 </div>
             </div>
