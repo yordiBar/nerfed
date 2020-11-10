@@ -26,7 +26,13 @@
             </div>
             <div class="showcase-form card">
                 <h2>Send us a message</h2>
-                <form action="" method="POST">
+                @if(Session::has('message_sent'))
+                <div class="alert alert-success" role="alert">
+                    {{Session::get('message_sent')}}
+                </div>
+                @endif
+                <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data">
+                    @csrf
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -36,7 +42,7 @@
                     <div class="form-control">
                         <textarea name="message" placeholder="Your message here..." required></textarea>
                     </div>
-                    <input type="submit" value="Send" class="btn btn-dark">
+                    <input name="send" type="submit" value="Send" class="btn btn-dark">
                 </form>
             </div>
         </div>
@@ -69,6 +75,9 @@
 
     <!-- Footer -->
     <x-footer />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 
 </html>

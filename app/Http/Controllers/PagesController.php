@@ -17,8 +17,4 @@ class PagesController extends Controller
     public function videos() {
         return view('videos');
     }
-
-    public function contact() {
-        return view('contact');
-    }
 }

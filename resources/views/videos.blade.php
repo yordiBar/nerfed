@@ -24,7 +24,6 @@
                     Videos and montages made using several different programmes and techniques.
                 </p>
             </div>
-            <img src="images/server.png" alt="">
         </div>
     </section>
 
