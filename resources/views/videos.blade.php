@@ -34,24 +34,24 @@
         </div>
         <div class="container vid vid-3">
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/-_oRjksom3o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='0' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/8hASdMQFPBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='1' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/bcTzt42y0nM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='3' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="container vid vid-3">
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/Yip7CmKHOEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='4' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/vd_N6gYHpUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='5' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="card flex">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/xL7l_REw9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="latestVideoEmbed" vnum='6' cid="UC4EIFBatBM5pdB1tiRm1QPA" width="250" height="180" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="container yt">
@@ -82,6 +82,27 @@
 
     <!-- Footer -->
     <x-footer />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+
+        function loadVideo(iframe) {
+            $.getJSON(reqURL + iframe.getAttribute('cid'),
+                function(data) {
+                    var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+                    console.log(videoNumber);
+                    var link = data.items[videoNumber].link;
+                    id = link.substr(link.indexOf("=") + 1);
+                    iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                }
+            );
+        }
+        var iframes = document.getElementsByClassName('latestVideoEmbed');
+        for (var i = 0, len = iframes.length; i < len; i++) {
+            loadVideo(iframes[i]);
+        }
+    </script>
 </body>
 
 </html>
